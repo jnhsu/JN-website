@@ -1,0 +1,240 @@
+section.gallery{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+section.gallery>.col{
+    width: 450px; margin: 20px;  
+}
+
+@media (max-width:800px){
+	section.gallery{
+		flex-wrap:wrap;
+	}
+	section.gallery>.col{
+		width:90%;margin:20px 0px;
+    }
+    section.gallery>.col:last-child{
+        display: flex; flex-direction: column-reverse;
+    }
+}
+/* section.gallery>.col>.picture */
+section.gallery>.col>.picture{
+    width: 100%; height: 500px;
+    text-align: center; color: #ffffff;
+}
+section.gallery>.col>.picture-1{
+    background-image: url(0329-22.png);
+    background-size: cover;
+}
+section.gallery>.col>.picture-2{
+    background-image: url(0331-24.png);
+    background-size: cover;
+}
+/* section.gallery>.text */
+section.gallery>.col>.text{
+    box-sizing: border-box;
+    width: 100%; height: 300px;
+    text-align: center; color: #222222;
+    border: 4px solid #222222;
+    line-height: 0.9em;
+}
+
+/* section.gallery>.col>.block */
+section.gallery>.col>.block{
+    margin-bottom: 40px;
+    display: flex; align-items: center; justify-content: center;
+}
+section.gallery>.col>.block>.words{
+    width: 100%;
+}
+section.gallery>.col>.block>.words>.title{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em; font-weight: bold;
+    margin-bottom: 30px;
+}
+section.gallery>.col>.block>.words>.story{
+    font-size: 1.5em; margin-bottom: 40px;
+}
+section.gallery>.col>.block>.words>.action>.btn{
+    font-size: 0.8em; color: #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+section.gallery>.col>.block>.words>.action>.btn:hover{
+    background-color: rgba(0,0,0,1);
+}
+
+/* section.card-1>.col>.card */
+section.card-1{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+section.card-1>.col{
+    width: 500px; margin: 0px;
+}
+@media (max-width:800px){
+	section.card-1{
+		flex-wrap:wrap;
+	}
+	section.card-1>.col{
+		width:90%;margin:-20px 0px;
+	}
+}
+
+/* section.card>.col>.picture */
+section.card-1>.col>.picture{
+    width: 100%; height: 300px;
+    opacity: 0.8; 
+    transition: background-color 0.5s; cursor: pointer;
+}
+section.card-1>.col>.picture:hover{
+    opacity: 1.0;cursor: pointer;
+}
+
+section.card-1>.col>.picture-3{
+    background-image: url(Info_card.png);
+    background-size: cover;
+}
+/* section.card-1>.col>.text */
+section.card-1>.col>.text{
+    box-sizing:border-box;
+    width:100%; height:300px; text-align:left;
+    display:flex; align-items:center;
+    line-height:1em; padding:20px 40px;
+    border:1px solid #D0D0D0; color:#000000;
+   }
+
+/* section.card-1>.col>.block */
+section.card-1>.col>.block{
+    margin-bottom: 40px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+/* section.card-1>.col>.block>.words */
+section.card-1>.col>.block>.words{
+    width:100%;
+   }
+/* section.card-1>.col>.block>.words>.title */
+section.card-1>.col>.block>.words>.title{
+    font-size:1.5em;
+    margin-bottom:30px;
+   }
+section.card-1>.col>.block>.words>.story{
+    font-size:0.8em;margin-bottom:80px;
+     color:#ADADAD;
+   }
+   
+section.card-1>.col>.block>.words>.action{
+    display:flex;
+    margin-bottom:0px;
+   }
+section.card-1>.col>.block>.words>.action>.item{
+    font-size:0.6em;margin:0px 20px;color:#D0D0D0;
+   
+   }
+
+   /* section.card-2>.col>.card-2 */
+section.card-2{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+}
+section.card-2>.col{
+    width: 500px; margin: 0px;
+}
+@media (max-width:800px){
+	section.card-2{
+		flex-wrap:wrap;
+	}
+	section.card-2>.col{
+		width:90%;margin:-20px 0px;
+	}
+}
+/* section.card-2>.col>.picture */
+section.card-2>.col>.picture{
+    width: 100%; height: 300px;
+    opacity: 0.8; 
+    transition: background-color 0.5s; cursor: pointer;
+}
+section.card-2>.col>.picture:hover{
+    opacity: 1.0;cursor: pointer;
+
+}
+section.card-2>.col>.picture-4{
+    background-image: url(Wallet.png);
+    background-size: cover;
+}
+/* section.card-2>.col>.text */
+section.card-2>.col>.text{
+    box-sizing:border-box;
+    width:100%; height:300px; text-align:left;
+    display:flex; align-items:center;
+    line-height:1em; padding:20px 40px;
+    border:1px solid #D0D0D0; color:#000000;
+}
+
+/* section.card-2>.col>.block */
+section.card-2>.col>.block{
+    margin-bottom: 40px;
+    display: flex; align-items: center; justify-content: center;
+}
+/* section.card-2>.col>.text>.words */
+section.card-2>.col>.block>.words{
+    width:100%;
+}
+/* section.card-2>.col>.text>.words>.title */
+section.card-2>.col>.block>.words>.title{
+    font-size:1.5em;
+    margin-bottom:30px;
+}
+section.card-2>.col>.block>.words>.story{
+    font-size:0.8em;margin-bottom:80px;
+     color:#ADADAD;
+}
+   
+section.card-2>.col>.block>.words>.action{
+    display:flex;
+    margin-bottom:0px;
+}
+section.card-2>.col>.block>.words>.action>.item{
+    font-size:0.6em;margin:0px 20px;color:#D0D0D0;
+   
+}
+@media (max-width:800px){
+    section.card-1>.col>.picture-3{
+    background-position: 50% center;
+    }
+	section.card-1>.col>.text{
+        flex-wrap:wrap;height:200px;
+        padding:20px 20px;
+    }
+    section.card-1>.col>.block>.words>.title{
+        font-size:1em;
+        margin-bottom:20px;
+    }
+    section.card-1>.col>.block>.words>.story{
+        font-size:0.6em;margin-bottom:30px;
+    }
+}
+
+@media (max-width:800px){
+    section.card-2>.col>.picture-4{
+        background-position: 50% center;
+        }
+	section.card-2>.col>.text{
+        flex-wrap:wrap;height:200px;
+        padding:20px 20px;
+    }
+    section.card-2>.col>.block>.words>.title{
+        font-size:1em;
+        margin-bottom:20px;
+    }
+    section.card-2>.col>.block>.words>.story{
+        font-size:0.6em;margin-bottom:30px;
+    }
+}
